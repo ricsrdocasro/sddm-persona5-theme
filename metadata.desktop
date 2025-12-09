@@ -1,16 +1,16 @@
 [SddmGreeterTheme]
-Name=Sugar Dark
-Description=The sweetest theme around; Dark!
-Author=Marian Alexander Arlt
-Copyright=Copyright (C) 2018 Marian Arlt
+Name=Persona 5
+Description=A kinetic, animated login theme inspired by Persona 5. "Take Your Time".
+Author=Ricardo de Castro
+Copyright=Copyright (C) 2025 Ricardo de Castro
 License=GPL-3.0-or-later
 Type=sddm-theme
 Version=1.0
-Website=https://github.com/MarianArlt/sddm-sugar-dark
+Website=https://github.com/YOUR_USERNAME/persona5-sddm-theme
 Screenshot=Preview.png
 MainScript=Main.qml
 ConfigFile=theme.conf
 TranslationsDirectory=translations
-Email=marianarlt@icloud.com
-Theme-Id=sugar-dark
+Email=your_email@example.com
+Theme-Id=persona5
 Theme-API=2.11
