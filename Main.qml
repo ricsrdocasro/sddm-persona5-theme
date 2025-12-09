@@ -11,7 +11,7 @@ Pane {
 
     FontLoader {
         id: p5Hatty
-        source: "p5hatty.ttf"
+        source: "Assets/Fonts/p5hatty.ttf"
     }
     property string headerFont: "p5hatty" 
     property string bodyFont: "Arsenal"
@@ -20,7 +20,7 @@ Pane {
     Image {
         id: bg
         anchors.fill: parent
-        source: "background.png"
+        source: "Assets/Images/background.png"
         fillMode: Image.PreserveAspectCrop 
         asynchronous: true
     }
@@ -160,7 +160,7 @@ Pane {
             
             Image {
                 id: daySprite
-                property var days: ["sunday.png", "monday.png", "tuesday.png", "wednesday.png", "thursday.png", "friday.png", "saturday.png"]
+                property var days: ["Assets/Images/sunday.png", "Assets/Images/monday.png", "Assets/Images/tuesday.png", "Assets/Images/wednesday.png", "Assets/Images/thursday.png", "Assets/Images/friday.png", "Assets/Images/saturday.png"]
                 source: days[new Date().getDay()]
                 fillMode: Image.PreserveAspectFit
                 Layout.preferredHeight: 60
@@ -176,7 +176,7 @@ Pane {
                 spacing: 10
                 Layout.alignment: Qt.AlignRight
                 Image { 
-                    source: "playtime.png"
+                    source: "Assets/Images/playtime.png"
                     fillMode: Image.PreserveAspectFit
                     Layout.preferredHeight: 25
                     Layout.preferredWidth: 100
@@ -242,7 +242,7 @@ Pane {
 
         Image {
             id: headerImg
-            source: "header.png"
+            source: "Assets/Images/header.png"
             width: 450
             height: 180
             anchors.horizontalCenter: parent.horizontalCenter
@@ -265,7 +265,7 @@ Pane {
                 Layout.preferredHeight: 90 
                 Image { 
                     anchors.fill: parent
-                    source: "input_bg.png"
+                    source: "Assets/Images/input_bg.png"
                     fillMode: Image.Stretch
                     mirror: true 
                 }
@@ -299,7 +299,7 @@ Pane {
                 Layout.preferredHeight: 90
                 Image { 
                     anchors.fill: parent
-                    source: "input_bg.png"
+                    source: "Assets/Images/input_bg.png"
                     fillMode: Image.Stretch
                     transform: Rotation {
                         angle: 2
@@ -348,7 +348,7 @@ Pane {
                     
                     Image {
                         id: daggerImg
-                        source: "dagger.png"
+                        source: "Assets/Images/dagger.png"
                         visible: false
 
                         width: 300
@@ -379,7 +379,7 @@ Pane {
                     background: Item {
                         Image {
                             id: btnImg
-                            source: "login_btn.png"
+                            source: "Assets/Images/login_btn.png"
                             anchors.centerIn: parent
                             width: 400
                             height: 80
@@ -463,7 +463,7 @@ Pane {
             
             Image { 
                 id: hatBase
-                source: "hat.png"
+                source: "Assets/Images/hat.png"
                 width: 120
                 height: 100
                 anchors.centerIn: parent
@@ -476,7 +476,7 @@ Pane {
                 height: 80
                 x: 56
                 y: 33 
-                source: "fire1.png"
+                source: "Assets/Images/fire1.png"
                 fillMode: Image.PreserveAspectFit
                 
                 Rectangle { 
@@ -492,7 +492,7 @@ Pane {
                 repeat: true
                 onTriggered: { 
                     parent.frame = (parent.frame % 10) + 1
-                    flameSprite.source = "fire" + parent.frame + ".png" 
+                    flameSprite.source = "Assets/Images/fire" + parent.frame + ".png" 
                 }
             }
         }
