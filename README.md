@@ -3,7 +3,7 @@
 
 A fully animated, kinetic login theme for SDDM (Simple Desktop Display Manager) inspired by the UI of **Persona 5**.
 
-![Preview](output.gif)
+![Preview](Assets/Images/output.gif)
 
 ## 🎩 Features
 
